@@ -1,0 +1,18 @@
+div.main {
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 24px;
+}
+div.buttons {
+  padding: 5px;
+  background-color: #ddd;
+  border: solid 1px black;
+  border-radius: 5px;
+}
+p.display {
+  padding: 5px;
+  background-color: #ddd;
+  border: solid 1px black;
+  border-radius: 5px;
+}
