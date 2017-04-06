@@ -3,6 +3,9 @@ this is the object cunstructer for the clock object
  that our timer will be an instance of
 it doesn't take any parameters since all clocks start at zero time.
 */
+var count = true;
+
+
 function Clock(sec,min,hour) {
   //time keeping variables for clock
   this.seconds = sec;
@@ -21,7 +24,6 @@ function Clock(sec,min,hour) {
       this.hours ++;
       this.minutes = 0;
     }
-
   }
 
 
@@ -43,6 +45,13 @@ function Clock(sec,min,hour) {
 
 var timer = new Clock(0,0,0);
 
-setInterval(function(){timer.tickUp();}, 1000);
+function start(){
+  if (count) {
+    setInterval(function(){timer.tickUp();}, 1000);
+  }
+  else {
+    setInterval(function(){timer.tickDown();}, 1000);
+  }
 
+}
 setInterval(function(){ display(); }, 1000);
