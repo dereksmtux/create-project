@@ -1,3 +1,3 @@
 # CSP create task
 
-Any possible ideas?
+note, use slide down panels some how they look cool
