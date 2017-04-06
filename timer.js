@@ -31,20 +31,27 @@ function Clock(sec,min,hour) {
     this.seconds --;
 
     if (this.seconds < 0) {
-      this.minutes --;
-      this.seconds = 59;
-    }
+      if (this.minutes > 0) {
 
+        this.minutes --;
+        this.seconds = 59;
+      }
+      else {
+        this.seconds = 0
+      }
+    }
     if (this.minutes < 0) {
-      this.hours --;
-      this.minutes = 59;
+      if (this.hours > 0) {
+        this.hours --;
+        this.minutes = 59;
+      }
     }
 
   }
 }
 
 var timer = new Clock(0,0,0);
-
+//
 function start(){
   if (count) {
     setInterval(function(){timer.tickUp();}, 1000);
