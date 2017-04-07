@@ -26,7 +26,7 @@ function Clock(sec,min,hour) {
     }
   }
 
-
+//counts time down
   this.tickDown = function(){
     this.seconds --;
 
@@ -51,7 +51,7 @@ function Clock(sec,min,hour) {
 }
 
 var timer = new Clock(0,0,0);
-//
+//starts the clock ticking
 function start(){
   if (count) {
     setInterval(function(){timer.tickUp();}, 1000);
