@@ -25,7 +25,7 @@ function Clock(sec,min,hour) {
       this.minutes = 0;
     }
   }
-
+//Deaven did this part ******* :D
 //counts time down
   this.tickDown = function(){
     this.seconds --;

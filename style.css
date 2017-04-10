@@ -27,3 +27,13 @@ p.display {
   margin-right: auto;
   border-radius: 5px;
 }
+
+
+td {
+  border: solid black 1px;
+}
+p.num {
+  padding: 15%;
+
+
+}
