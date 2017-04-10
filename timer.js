@@ -4,7 +4,7 @@ this is the object cunstructer for the clock object
 it doesn't take any parameters since all clocks start at zero time.
 */
 var count = true;
-
+var started = false;
 
 function Clock(sec,min,hour) {
   //time keeping variables for clock

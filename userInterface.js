@@ -3,8 +3,8 @@ function display() {
 }
 
 $('#startButton').click(function(){
-  if !started {
+  if (!started) {
       start();
-      started == true;
+      started = true;
   }
 });
