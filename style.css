@@ -21,6 +21,7 @@ p.display {
 }
 
 #startButton {
+  cursor: pointer;
   border: solid 1px black;
   text-align: center;
   width: 25%;
@@ -37,11 +38,14 @@ table {
 
 td {
   width: 5%;
-  border: solid black 1px;
   padding: 5px;
   text-align: center;
 }
 
 p.num {
-  padding: 15%;
+  cursor: pointer;
+  border: solid 1px black;
+  border-radius: 5px;
+  margin: 0px;
+  padding: 10px;
 }
