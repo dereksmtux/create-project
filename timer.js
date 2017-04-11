@@ -5,6 +5,7 @@ it doesn't take any parameters since all clocks start at zero time.
 */
 var count = true;
 var started = false;
+var buttons = [1,2,3,4,5,6,7,8,9,0];
 
 function Clock(sec,min,hour) {
   //time keeping variables for clock
@@ -61,4 +62,3 @@ function start(){
   }
 
 }
-setInterval(function(){ display(); }, 1000);
