@@ -14,15 +14,15 @@ $('#startButton').click(function(){
 // this is the event handler for the num buttons
 $('.num').click(function(event) {
   switch($(this).attr('id')) {
-    case 'one': console.log('test'); break;
-    case 'two': console.log('test2'); break;
-    case 'three': console.log('test3'); break;
-    case 'four': console.log('test4'); break;
-    case 'five': console.log('test5');break;
-    case 'six': console.log('test6');break;
-    case 'seven': console.log('test7');break;
-    case 'eight': console.log('test8');break;
-    case 'nine': console.log('test9');break;
+    case 'one': timer.addTime('1'); break;
+    case 'two': timer.addTime('2'); break;
+    case 'three': timer.addTime(3); break;
+    case 'four': timer.addTime(4); break;
+    case 'five': timer.addTime(5);break;
+    case 'six': timer.addTime(6);break;
+    case 'seven': timer.addTime(7);break;
+    case 'eight': timer.addTime(8);break;
+    case 'nine': timer.addTime(9);break;
 
 
   }
