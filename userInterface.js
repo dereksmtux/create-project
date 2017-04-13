@@ -16,13 +16,13 @@ $('.num').click(function(event) {
   switch($(this).attr('id')) {
     case 'one': timer.addTime('1'); break;
     case 'two': timer.addTime('2'); break;
-    case 'three': timer.addTime(3); break;
-    case 'four': timer.addTime(4); break;
-    case 'five': timer.addTime(5);break;
-    case 'six': timer.addTime(6);break;
-    case 'seven': timer.addTime(7);break;
-    case 'eight': timer.addTime(8);break;
-    case 'nine': timer.addTime(9);break;
+    case 'three': timer.addTime('3'); break;
+    case 'four': timer.addTime('4'); break;
+    case 'five': timer.addTime('5');break;
+    case 'six': timer.addTime('6');break;
+    case 'seven': timer.addTime('7');break;
+    case 'eight': timer.addTime('8');break;
+    case 'nine': timer.addTime('9');break;
 
 
   }

@@ -5,7 +5,7 @@ it doesn't take any parameters since all clocks start at zero time.
 */
 var count = true;
 var started = false;
-var buttons = [1,2,3,4,5,6,7,8,9,0];
+
 var addTimer = []
 
 function Clock(sec,min,hour) {
@@ -53,29 +53,35 @@ function Clock(sec,min,hour) {
   this.addTime = function(num) {
 
     addTimer.push(num);
-    //assigning seconds to array
-    /*
-    if (addTimer.length > 1) {
-      var sec =  Number((Number(addTimer[0]) * 10) +  Number(addTimer[1]));
+//seconds
+    if (addTimer.length >1) {
+      sec = addTimer[addTimer.length -2] + addTimer[addTimer.length -1];
     }
     else {
-      var sec = Number(addTimer[0]);
+      sec = addTimer[addTimer.length -1];
+    }
+//minutes
+    if (addTimer.length >3) {
+      min = addTimer[addTimer.length -4] + addTimer[addTimer.length -3];
+    }
+    else if(addTimer.length >2){
+      min = addTimer[addTimer.length -3];
+    }
+//hours
+    if (addTimer.length >5) {
+      hour = addTimer[addTimer.length -6] + addTimer[addTimer.length -5];
+    }
+    else if (addTimer.length >4) {
+      hour = addTimer[addTimer.length -5];
     }
 
-    if (addTimer.length == 4) {
-        var min = Number((Number(addTimer[3]) * 10) +  Number(addTimer[2]));
-    }
-    else if (addTimer.length == 3 ) {
-      var min = Number( (Number(addTimer[2]) * 10) + Number(addTimer[1]));
-    }
-    else {
-      min = 0;
-    }
-
-    //var sec = addTimer[0]
-    this.seconds = sec;
-    this.minutes = min;
-    */
+    sec = Number(sec);
+    min = Number(min);
+    hour = Number(hour);
+    timer.seconds = sec;
+    timer.minutes = min;
+    timer.hours = hour;
+    console.log(addTimer)
 
   }
 
