@@ -23,11 +23,13 @@ $('.num').click(function(event) {
     case 'seven': timer.addTime('7');break;
     case 'eight': timer.addTime('8');break;
     case 'nine': timer.addTime('9');break;
+    case 'zero': timer.addTime('0'); break;
+    case 'refresh': location.reload();; break;
 
 
   }
 });
 
 $(document).ready(function() {
-    setInterval(function(){ display(); }, 1000);
+    setInterval(function(){ display(); }, 500);
 });
