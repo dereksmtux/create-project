@@ -24,12 +24,14 @@ $('.num').click(function(event) {
     case 'eight': timer.addTime('8');break;
     case 'nine': timer.addTime('9');break;
     case 'zero': timer.addTime('0'); break;
-    case 'refresh': location.reload();; break;
+    case 'refresh': location.reload(); break;
+    case 'up': timer.setDirection('up'); start();  break;
+    case 'down': timer.setDirection('down'); start(); break;
 
 
   }
 });
 
 $(document).ready(function() {
-    setInterval(function(){ display(); }, 500);
+    setInterval(function(){ display(); }, 100);
 });

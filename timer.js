@@ -13,6 +13,7 @@ function Clock(sec,min,hour) {
   this.seconds = sec;
   this.minutes = min;
   this.hours = hour;
+  this.direction = 'up';
   //this method will step up the time incromentally
   this.tickUp = function(){
     this.seconds +=1;
@@ -49,6 +50,9 @@ function Clock(sec,min,hour) {
       }
     }
 
+    if (this.seconds == 0 && this.minutes == 0 && this.hours == 0) {
+      alert('timer done');
+    }
   }
   this.addTime = function(num) {
 
@@ -85,12 +89,15 @@ function Clock(sec,min,hour) {
 
   }
 
+  this.setDirection = function(i) {
+    this.direction = i;
+  }
 }
 
 var timer = new Clock(0,0,0);
 //starts the clock ticking
 function start(){
-  if (count) {
+  if (timer.direction == 'up') {
     setInterval(function(){timer.tickUp();}, 1000);
   }
   else {
