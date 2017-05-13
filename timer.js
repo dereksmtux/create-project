@@ -1,7 +1,6 @@
 /*
 this is the object cunstructer for the clock object
  that our timer will be an instance of
-it doesn't take any parameters since all clocks start at zero time.
 */
 var count = true;
 var started = false;
@@ -78,7 +77,7 @@ function Clock(sec,min,hour) {
     else if (addTimer.length >4) {
       hour = addTimer[addTimer.length -5];
     }
-
+    //time assigment
     sec = Number(sec);
     min = Number(min);
     hour = Number(hour);
@@ -88,7 +87,6 @@ function Clock(sec,min,hour) {
     console.log(addTimer)
 
   }
-
   this.setDirection = function(i) {
     this.direction = i;
   }
